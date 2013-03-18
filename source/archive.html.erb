@@ -6,6 +6,14 @@ layout: page
     Archive
 <% end%>
 
+<h2 class="h3">By Year</h2>
+<ul class="posts">
+    <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+        <li><%= link_to year, blog_year_path(year) %> (<%= articles.size %>)</a></li>
+    <% end %>
+</ul>
+
+<h2 class="h3">All</h2>
 <ul class="posts">
     <% page_articles.each_with_index do |article, i| %>
         <li>
@@ -13,4 +21,5 @@ layout: page
         </li>
     <% end %>
 </ul>
+
 
