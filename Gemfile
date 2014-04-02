@@ -1,8 +1,14 @@
-source "http://rubygems.org"
+source "https://rubygems.org"
 
-gem "middleman", "~> 3.0.12"
-gem "middleman-livereload", "~>3.0.1"
-gem "middleman-blog", "~> 3.2.0"
-gem 'rb-inotify', '~> 0.9'
+gem "middleman"
+gem "middleman-livereload"
+gem "middleman-blog"
+gem 'rb-inotify'
 gem "therubyracer"
-gem "builder", "~> 3.0.0"
+gem "builder"
+gem "haml"
+gem "hpricot"
+gem "erubis"
+gem "ruby_parser"
+gem "haml2slim"
+gem "slim"

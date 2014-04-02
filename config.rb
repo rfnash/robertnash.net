@@ -4,6 +4,8 @@
 
 # Time.zone = "UTC"
 
+set :slim, { :pretty => true, :format => :html5, :sort_attrs => false }
+
 activate :blog do |blog|
   # blog.prefix = "blog"
   # blog.permalink = ":year/:month/:day/:title.html"
