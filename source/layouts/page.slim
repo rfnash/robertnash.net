@@ -1,0 +1,21 @@
+- wrap_layout :layout do
+  article.unit-article.layout-page
+    .unit-inner.unit-article-inner
+      .content
+        header
+          .unit-head
+            .unit-inner.unit-head-inner
+              h1.h2.entry-title= yield_content :head
+            /! unit-inner
+          /! unit-head
+        .bd
+          .entry-content
+            = yield
+          /! entry-content
+        /! bd
+        footer.unit-foot
+          .unit-inner.unit-foot-inner
+            p.gotop
+              a href="#page"  Back to Top
+      /! content
+    /! unit-inner
