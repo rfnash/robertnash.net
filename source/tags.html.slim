@@ -1,0 +1,10 @@
+---
+layout: page
+---
+- content_for :head do
+  | Tags
+ul.tags
+  - blog.tags.each do |tag, articles|
+    li
+      = link_to tag, tag_path(tag)
+      |  (#{articles.size})
