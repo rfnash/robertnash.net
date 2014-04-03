@@ -19,7 +19,6 @@ GEM
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
-    erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -27,12 +26,7 @@ GEM
     fssm (0.2.10)
     haml (4.0.5)
       tilt
-    haml2slim (0.4.7)
-      haml (>= 3.0)
-      nokogiri
-      ruby_parser
     hike (1.2.3)
-    hpricot (0.8.6)
     http_parser.rb (0.5.3)
     i18n (0.6.9)
     json (1.8.1)
@@ -74,10 +68,7 @@ GEM
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
-    mini_portile (0.5.3)
     multi_json (1.9.2)
-    nokogiri (1.6.1)
-      mini_portile (~> 0.5.0)
     rack (1.5.2)
     rack-livereload (0.3.15)
       rack
@@ -125,10 +116,6 @@ PLATFORMS
 
 DEPENDENCIES
   builder
-  erubis
-  haml
-  haml2slim
-  hpricot
   middleman
   middleman-blog
   middleman-livereload

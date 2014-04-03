@@ -5,7 +5,6 @@
 # Time.zone = "UTC"
 
 set :slim, { :pretty => true, :format => :html5, :sort_attrs => false }
-set :haml, { :format => :html5 }
 
 activate :blog do |blog|
   # blog.prefix = "blog"
