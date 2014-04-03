@@ -7,5 +7,5 @@ h2.h3 Recent Articles
 ul.posts
   - blog.articles[0...10].each do |article|
     li
-      span= article.date.strftime('%b %e')
+      span= article.date.strftime(' %b %e ')
       | &raquo; #{link_to article.title, article}
