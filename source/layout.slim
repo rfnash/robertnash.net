@@ -1,0 +1,91 @@
+doctype html
+/![if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"
+/![if IE 7] <html class="no-js lt-ie9 lt-ie8 ie" lang="en"
+/![if IE 8] <html class="no-js lt-ie9 ie" lang="en"
+/! [if gt IE 8]><!
+html.no-js lang="en" 
+  /! <![endif]
+  head
+    meta charset="utf-8" /
+    /! Always force latest IE rendering engine (even in intranet) &amp; Chrome Frame
+    meta content="width=device-width,initial-scale=1" name="viewport" /
+    title= yield_content :head
+    meta content=("Robert Nash") name="author" /
+    link href="https://www.google.com/accounts/o8/ud" rel="openid2.provider" /
+    link href="http://www.google.com/profiles/musicmaker1118" rel="openid2.local_id" /
+    link href="/feed.xml" rel="alternate" title=("Robert Nash") type="application/rss+xml" /
+    = stylesheet_link_tag "style.css"
+    script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js" 
+  body
+    #page.hentry
+      header.the-header
+        .unit-head
+          .unit-inner.unit-head-inner
+            p.logo
+              a href="/"  Robert Nash
+            nav.nav-global
+              ul
+                li
+                  a href="/"  home
+                li.archive
+                  a href="/archive"  archive
+                li.tags
+                  a href="/tags"  tags
+          /! unit-inner
+        /! unit-head
+      .body role="main" 
+        .unit-body
+          .unit-inner.unit-body-inner
+            .entry-content
+              = yield
+          /! unit-inner
+        /! unit-body
+      /! body
+      footer.the-footer
+        .unit-foot
+          .unit-inner.unit-foot-inner
+            .misc.vcard
+              h4 about
+              ul
+                li.contact
+                  address
+                    span.author.fn.n Robert Nash
+                    | \-
+                    span.fn.email robert@robertnash.net
+                li.github
+                  a href="https://github.com/rfnash" rel="me"  Github
+                li.twitter
+                  a href="https://twitter.com/rfnash" rel="me"  Twitter
+                li class="app.net" 
+                  a href="https://alpha.app.net/rfnash" rel="me"  App.net
+                li.facebook
+                  a href="https://www.facebook.com/rfnash" rel="me"  Facebook
+                li class="Google+" 
+                  a href="https://plus.google.com/101567983345126108192/posts" rel="me"  Google+
+                li class="identi.ca" 
+                  a href="http://identi.ca/rfnash" rel="me"  Identi.ca
+                li class="tent.is" 
+                  a href="https://rfnash.tent.is/" rel="me"  Tent.is
+                li.rss
+                  a href="/feed.xml"  Subscribe to RSS Feed
+            /! misc
+            p.licence
+              | Theme:
+              a href="http://layouts-the.me"  the_minimum
+              | from
+              = succeed "." do
+                a href="http://jekyllbootstrap.com/"  Jekyll-bootstrap
+              br/
+              | Powered by
+              = succeed "." do
+                a href="http://middlemanapp.com/"  Middleman
+              br/
+              = succeed "." do
+                a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license"  Some rights reserved
+          /! unit-foot-inner
+        /! unit-foot
+    /! page
+    javascript:
+      /!*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+      | (function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+        
